@@ -2,8 +2,8 @@ POST https://modeloapinodefastify.onrender.com/pessoas
 Content-Type:  application/json
 
 {
-    "nome": "claudio",
-    "idade": 20
+    "nome": "Isabella",
+    "idade": 18
 }
 
 ###
@@ -23,5 +23,5 @@ Content-Type:  application/json
 
 ###
 
-DELETE https://modeloapinodefastify.onrender.com/pessoas/e2d2539b-5113-4c46-9551-7d7f7cdee5d1
+DELETE https://modeloapinodefastify.onrender.com/pessoas/77652d46-c4dd-4350-9c42-1f54f268f80e
 

@@ -3,7 +3,7 @@ import { fastifyCors } from '@fastify/cors';
 import { validatorCompiler, serializerCompiler, jsonSchemaTransform } from 'fastify-type-provider-zod';
 import fastifySwagger from '@fastify/swagger';
 import fastifySwaggerUi from '@fastify/swagger-ui';
-import { routes } from './routes.js';
+import { pessoaRoutes } from './routes/pessoaRoutes.js';
 
 const app = fastify().withTypeProvider();
 
@@ -32,7 +32,7 @@ app.register(fastifySwaggerUi, {
 });
 
 // importa o arquivo de rotas
-app.register(routes);
+app.register(pessoaRoutes);
 
 app.listen({
     host: '0.0.0.0',

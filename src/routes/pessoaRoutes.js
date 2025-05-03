@@ -1,9 +1,9 @@
 import { z } from 'zod';
-import { DatabasePostgres } from '../database-postgres.js';
+import { DatabasePostgres } from '../database/database-postgres.js';
 
 const database = new DatabasePostgres();
 
-export async function routes(app) {
+async function pessoaRoutes(app) {
     // GET - Listar pessoas
     app.get('/pessoas', {
         schema: {
@@ -105,4 +105,6 @@ export async function routes(app) {
 
         return res.status(204).send();
     });
-}
+};
+
+export { pessoaRoutes };
