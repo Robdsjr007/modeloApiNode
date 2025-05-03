@@ -1,5 +1,5 @@
 import { randomUUID } from "crypto";
-import sql from "./db.js";
+import { sql } from "./db.js";
 
 class DatabasePostgres {
    async list(search) {
@@ -33,4 +33,4 @@ class DatabasePostgres {
     };
 };
 
-export default DatabasePostgres;
+export  { DatabasePostgres };

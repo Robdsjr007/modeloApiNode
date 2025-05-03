@@ -1,4 +1,4 @@
-POST http://localhost:3000/pessoas
+POST https://modeloapinodefastify.onrender.com/pessoas
 Content-Type:  application/json
 
 {
@@ -8,20 +8,20 @@ Content-Type:  application/json
 
 ###
 
-GET http://localhost:3000/pessoas
+GET https://modeloapinodefastify.onrender.com/pessoas
 
 
 ### 
 
-PUT http://localhost:3000/pessoas/5b915e09-0846-4f4b-abd7-6a1076e5a7c6
+PUT https://modeloapinodefastify.onrender.com/pessoas/5b915e09-0846-4f4b-abd7-6a1076e5a7c6
 Content-Type:  application/json
 
 {
-    "nome": "Claudio silva",
+    "nome": "Claudio",
     "idade": 21
 }
 
 ###
 
-DELETE http://localhost:3000/pessoas/e2d2539b-5113-4c46-9551-7d7f7cdee5d1
+DELETE https://modeloapinodefastify.onrender.com/pessoas/e2d2539b-5113-4c46-9551-7d7f7cdee5d1
 
